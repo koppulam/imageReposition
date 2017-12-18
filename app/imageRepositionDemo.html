@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="helloworld">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hello World</title>
+	<link rel="stylesheet" href="">
+</head>
+<body >
+
+<h1>Image cropper Demo</h1>
+	<div ng-controller="myImageCropperDemo">
+		<div class="thumbnail">
+			<div class="image-container">
+				<img width="600" src="http://allswalls.com/images/cute-babies-wallpaper-5.jpg" alt="">
+			</div>
+			<div class="controls-container">
+				<div>
+					<div> 
+						<input type="number" name="" value="" placeholder="">
+						<span>Width</span>
+					</div>
+					<div>
+						<input type="number" name="" value="" placeholder="">
+						<span>Height</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="image-preview">
+			<img width="600" src="http://allswalls.com/images/cute-babies-wallpaper-5.jpg" alt="">
+		</div>
+	</div>
+
+	<div ng-controller="mySecondController">
+	{{name}}
+	</div>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="lib/imageCropper.js"></script>
+	<script src="src/directive/imageRepositionDirective.js"></script>
+	<script src="src/controller/imageRepositionCtrl.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
